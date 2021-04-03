@@ -1,0 +1,135 @@
+@font-face {
+  font-family: SpaceMono;
+  src: url('../fonts/SpaceMono/SpaceMono-Regular.ttf');
+}
+@font-face {
+  font-family: FiraCode;
+  src: url('../fonts/FiraCode/FiraCode-Regular.ttf');
+}
+@font-face {
+  font-family: MyriadPro-Light;
+  src: url('../fonts/MyriadPro/MyriadPro-Light.otf');
+}
+html, body {
+  font-family: MyriadPro-Light!important
+  
+}
+
+.text-flame { color : #FF5252 }
+.bg-flame { background:  #FF5252 }
+.text-white { color : #fff }
+.bg-white { background : #fff }
+.text-black { color : #262626 }
+.bg-black { background : #262626 }
+.text-dark-indigo { color : #303F9F }
+.bg-dark-indigo { background : #303F9F }
+.text-visual { color : #0a192f }
+.bg-visual { background: #0a192f }
+/*utilities*/
+.navbar {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn.btn-flame {
+  background: transparent;
+  border-color: #FF5252;
+  color: #FF5252;
+}
+.btn.btn-flame:focus,
+.btn.btn-flame:hover {
+  background: #13294b ;
+  color:#FF5252;
+}
+.btn.btn-flame:active,
+.btn.btn-flame.active {
+  background: #13294b ;
+  color:#FF5252;
+}
+.btn.btn-flame.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+.logoHome {
+  height : 50px;
+}
+a.text-flame {
+  color : #FF5252
+}
+.navbar-section a {
+  font-family: FiraCode!important;
+  font-size : 0.65rem;
+}
+a.customLink {
+  color :  #b8c3e2
+}
+a.customLink:hover {
+  color : #FF5252;
+  text-decoration : none
+}
+.navbar {
+  height : 15vh;
+}
+#columnLeft {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height : 85vh;
+  width: calc(100% / 12);
+}
+#columnRight {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height : 85vh;
+  width: calc(100% / 12);
+}
+.mainColumn {
+  position : relative;
+  left : calc(100% / 12);
+}
+.bothColumn {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.customLine {
+  margin-left: calc(50% - 3px);
+  margin-right: auto;
+  border-left: 3px solid #b8c3e2;
+  height : 100px
+}
+#reverseMail {
+  font-family: FiraCode!important;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size : 0.7rem;
+  color: #b8c3e2;
+  transition : 0.3s
+}
+#reverseMail:hover {
+  color : #FF5252;
+  text-decoration : none;
+  margin-bottom : 1vh;
+}
+a.customIcon {
+  color :  #b8c3e2;
+  font-size : 1.1rem;
+  transition : 0.3s;
+}
+a.customIcon:hover {
+  color : #FF5252;
+  text-decoration : none;
+  margin-left : 1vh;
+}
+.text-grey {
+  color : #b8c3e2;
+}
+.text-light-grey {
+  color : #ccd6f6;
+}
+.text-dark-grey {
+  color : #7d88a5;
+}
