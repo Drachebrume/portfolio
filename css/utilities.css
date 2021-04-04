@@ -82,3 +82,9 @@
 .m-3 { margin : 12px }
 .m-4 { margin : 16px }
 .m-5 { margin : 20px }
+
+.space-1 { letter-spacing: 1px }
+.space-2 { letter-spacing: 2px }
+.space-3 { letter-spacing: 3px }
+.space-4 { letter-spacing: 4px }
+.space-5 { letter-spacing: 5px }

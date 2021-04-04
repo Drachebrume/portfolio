@@ -13,10 +13,22 @@ function toggleMenu() {
     $('#columnRight').removeClass("d-none");
   }
 }
-
+function activateModal(buttonId, modalId, closeId) {
+  $(`#${buttonId}`).on('click', () => {
+    $(`#${modalId}`).addClass('active')
+  })
+  $(`#${closeId}`).on('click', () => {
+    $(`#${modalId}`).removeClass('active')
+  })
+}
 $(window).resize(() => {
   toggleMenu();
 })
 $(document).ready(() => {
   toggleMenu();
+  activateModal('buttonMobileModal', 'mobileModal', 'closeMobileModal')
+  $('.customLinkMobile').on('click', () => {
+    $('#mobileModal').removeClass('active')
+  })
 })
+

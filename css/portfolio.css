@@ -65,6 +65,14 @@ a.customLink:hover {
   color : #FF5252;
   text-decoration : none
 }
+a.customLinkMobile {
+  color :  #b8c3e2;
+  font-size : 2rem
+}
+a.customLinkMobile:hover {
+  color : #FF5252;
+  text-decoration : none
+}
 .navbar {
   height : 15vh;
 }
@@ -132,4 +140,29 @@ a.customIcon:hover {
 }
 .text-dark-grey {
   color : #7d88a5;
+}
+#mobileModal .modal-container {
+  max-height : 100vh;
+  height : 100vh;
+  max-width : 100vh;
+  width : 100vw;
+}
+#mobileModal .modal-overlay {
+  background: #0a192f
+}
+.megaTitle {
+  font-weight: 900;
+  font-size: 5vw;
+}
+@media screen and (max-width: 1000px) {
+  .megaTitle {
+    font-weight: 900;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .megaTitle {
+    font-weight: 900;
+    font-size: 2rem;
+  }
 }
