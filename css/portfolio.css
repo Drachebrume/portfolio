@@ -166,3 +166,9 @@ a.customIcon:hover {
     font-size: 2rem;
   }
 }
+/* mobile format paysage */
+@media screen and (max-height: 500px) {
+  .navbar {
+    height : 30vh;
+  }
+}

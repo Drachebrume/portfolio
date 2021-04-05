@@ -1,16 +1,18 @@
-function toggleMenu() {
+function responsive() {
   if (window.innerHeight > window.innerWidth) {
-    console.log('mobile')
     $('#navbarPc').addClass("d-none");
     $('#navbarMobile').removeClass("d-none");
     $('#columnLeft').addClass("d-none");
     $('#columnRight').addClass("d-none");
   } else {
-    console.log('pc')
     $('#navbarPc').removeClass("d-none");
     $('#navbarMobile').addClass("d-none");
     $('#columnLeft').removeClass("d-none");
     $('#columnRight').removeClass("d-none");
+    if (window.innerHeight < 500) {
+      $('#columnLeft').addClass("d-none");
+      $('#columnRight').addClass("d-none");
+    }
   }
 }
 function activateModal(buttonId, modalId, closeId) {
@@ -22,10 +24,10 @@ function activateModal(buttonId, modalId, closeId) {
   })
 }
 $(window).resize(() => {
-  toggleMenu();
+  responsive();
 })
 $(document).ready(() => {
-  toggleMenu();
+  responsive();
   activateModal('buttonMobileModal', 'mobileModal', 'closeMobileModal')
   $('.customLinkMobile').on('click', () => {
     $('#mobileModal').removeClass('active')
