@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: SpaceMono;
   src: url('../fonts/SpaceMono/SpaceMono-Regular.ttf');
@@ -112,6 +115,13 @@ a.customLinkMobile:hover {
   border-left: 3px solid #b8c3e2;
   height : 100px
 }
+.verticalLine {
+  display : inline-block;
+  vertical-align : middle;
+  margin-right: auto;
+  border-top: 1px solid #7d88a5;
+  width : 300px
+}
 #reverseMail {
   font-family: FiraCode!important;
   writing-mode: vertical-rl;
@@ -156,13 +166,71 @@ a.customIcon:hover {
 .megaTitle {
   font-family: MyriadPro-SemiBold!important;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom : 5px;
+}
+.sectionTitle {
+  font-family: MyriadPro-SemiBold!important;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom : 5px;
+}
+#meImg {
+  border-radius: 10px;
+  box-shadow: 20px 20px 0  -2px #0a192f, 20px 20px #FF5252,
+  40px 40px 0  -2px #0a192f, 40px 40px #FF5252
+}
+.bio {
+  font-size : 1rem;
+}
+.techList {
+  font-size : 0.8rem;
+}
+.numberColor {
+  color : #FF5252;
+  font-family: FiraCode!important;
+}
+.fontFira {
+  font-family: FiraCode!important;
+}
+.subMenu {
+  border-radius : 0!important;
+  border-left : 1px solid #7d88a5;
+}
+.subMenu:hover {
+  background : #13294b!important;
+  color : #FF5252!important;
+  cursor : pointer;
+} 
+.subMenu:focus {
+  background : #13294b!important;
+  color : #FF5252!important;
+}
+.triggered {
+  border-left : 3px solid #FF5252!important;
+  color : #FF5252!important
+}
+.underline {
+  text-decoration: underline;
+}
+#aboutMenuMobile {
+  display : none;
 }
 @media screen and (max-width: 1200px) {
   .megaTitle {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  #columnRight, #columnLeft {
+    display : none
+  }
+  #aboutMenuPc {
+    display : none;
+  }
+  #aboutMenuMobile {
+    display : initial;
   }
 }
 @media screen and (max-width: 500px) {
@@ -179,4 +247,7 @@ a.customIcon:hover {
   .navbar {
     height : 30vh;
   }
+}
+:root {
+  --visual: #0a192f
 }

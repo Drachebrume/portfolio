@@ -32,5 +32,11 @@ $(document).ready(() => {
   $('.customLinkMobile').on('click', () => {
     $('#mobileModal').removeClass('active')
   })
+  $('.subMenu').on('click', (event) => {
+    $('.triggered').removeClass('triggered');
+    $(event.target).addClass('triggered');
+    $('.blocksection').addClass('d-none');
+    $(`#block${event.target.id}`).removeClass('d-none')
+  })
 })
 

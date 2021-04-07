@@ -23,13 +23,13 @@
 <body class="bg-visual">
   <header class="navbar bg-visual pb-5 pt-5" id="navbarPc">
     <section class="navbar-section text-white">
-      <img class="ml-10 pl-5 logoHome" src="images/logo.png">
+      <a href="#home"><img class="ml-10 pl-5 logoHome" src="images/logo.png"></a>
     </section>
     <section class="navbar-section mr-5 pr-5">
-      <a href="#" class="customLink mr-3"><span class="text-flame mr-2">01.</span>Infos</a>
-      <a href="#" class="customLink mr-3"><span class="text-flame mr-2">02.</span>Parcours</a>
-      <a href="#" class="customLink mr-3"><span class="text-flame mr-2">03.</span>Projets</a>
-      <a href="#" class="customLink mr-3"><span class="text-flame mr-2">04.</span>Contact</a>
+      <a href="#about" class="customLink mr-3"><span class="numberColor mr-2">01.</span>Infos</a>
+      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">02.</span>Parcours</a>
+      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">03.</span>Projets</a>
+      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">04.</span>Contact</a>
       <a href="#" class="btn btn-flame mx-5 px-3">Mon CV</a>
     </section>
   </header>
@@ -53,10 +53,10 @@
           </div>
           <div class="modal-body">
             <div class="content p-centered text-center">
-              <a href="#" class="customLinkMobile mr-3"><span class="text-flame mr-2">01.</span><br>Infos</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="text-flame mr-2">02.</span><br>Parcours</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="text-flame mr-2">03.</span><br>Projets</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="text-flame mr-2">04.</span><br>Contact</a><br>
+              <a href="#about" class="customLinkMobile mr-3"><span class="numberColor mr-2">01.</span><br>Infos</a><br>
+              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">02.</span><br>Parcours</a><br>
+              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">03.</span><br>Projets</a><br>
+              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">04.</span><br>Contact</a><br>
             </div>
           </div>
         </div>
@@ -76,16 +76,154 @@
           <div class="customLine mt-10"></div>
         </div>
       </div>
-      <div class="column col-10 col-md-12 mainColumn text-grey">
-        <div class="column col-8 col-md-12 p-centered text-left">
-          <span class="text-flame space-3">Hello, moi c'est</span><br>
-          <h1 class="text-light-grey megaTitle">Baptiste Poulain.</h1>
-          <span class="text-flame space-3">Et je suis</span><br>
-          <h1 class="megaTitle text-gray ">En recherche d'alternance développeur fullstack.</h1>
-          <p>Etudiant en 1ère année de Master Développeur Fullstack chez MyDigitalSchool 
-            en alternance </p>
+      <div class="column col-10 col-md-12 mainColumn text-grey p-centered">
+        <div class="columns">
+          <div class="column col-10 col-md-11 p-centered text-left" id="home">
+            <span class="text-flame space-3">Hello, moi c'est</span><br>
+            <h1 class="text-light-grey megaTitle">Baptiste Poulain.</h1>
+            <span class="text-flame space-3">Actuellement en</span><br>
+            <h1 class="megaTitle text-gray ">Recherche d'alternance développeur fullstack.</h1>
+            <p class="bio">Etudiant en 1ère année de Master Développeur Fullstack chez MyDigitalSchool 
+              en alternance, je conçoit des applications web et mobile. </p>
+            <a href = "mailto:baptiste.poulain59@gmail.com" class="btn btn-lg btn-flame text-flame">
+              <span class="p-5">Contact</span>
+            </a>
+          </div>
         </div>
-        
+        <div class="columns mt-40 pb-10">
+          <div class="column col-9 col-md-11 p-centered text-left" id="about">
+            <h3><span class="numberColor mr-2">01.</span>
+              <span class="sectionTitle ml-2">Infos</span><div class="verticalLine ml-5"></div></h3>
+            <div class="columns mt-2">
+              <div class="column col-8 col-md-11 bio pr-5">
+                <p class="mt-4">Je m'appelle Baptiste et j'ai 22 ans, je suis à la recherche d'une alternance pour mon 
+                <span class="text-flame">Master Développer Fullstack.</span>
+                Je suis passionné par les applications web depuis le début de ma licence informatique en 2018 quand j'ai découvert
+                HTML5 et CSS3 puis JavaScript suivi de NodeJS.</p>
+                <span class="mt-4">J'ai récemment travaillé avec les technologies suivantes :</span>
+                <div class="columns mt-4">
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">JavaScript</span>
+                  </div>
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">Node.js</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">CouchDB</span>
+                  </div>
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">MongoDB</span>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">ElasticSearch</span>
+                  </div>
+                  <div class="column col-6">
+                    <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
+                    <span class="text-tiny">Redis</span>
+                  </div>
+                </div>
+              </div>
+              <div class="column col-4 col-md-8 mt-5 p-centered">
+                <img src="images/squareMe.jpg" class="img-responsive rounded" id="meImg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column mt-40 pb-10">
+          <div class="column col-11 col-md-11 p-centered text-left" id="parcours">
+            <h3><span class="numberColor mr-2">02.</span>
+              <span class="sectionTitle ml-2">Parcours</span><div class="verticalLine ml-5"></div></h3>
+            <div class="columns mt-2">
+              <div class="column col-6 col-md-11 bio">
+                <ul class="menu bg-visual" id="aboutMenuPc">
+                  <li class="menu-item">
+                    <a class="subMenu triggered" id="section1">
+                      Master Dev Fullstack - 
+                      <span class="underline">Alternance</span>
+                    </a>
+                  </li><br>
+                  <li class="menu-item">
+                    <a class="subMenu" id="section2">
+                      Bachelor 3 Dev Web -
+                      <span class="underline">Alternance</span>
+                    </a>
+                  </li><br>
+                  <li class="menu-item">
+                    <a class="subMenu" id="section3">Licence Informatique</a>
+                  </li><br>
+                  <li class="menu-item">
+                    <a class="subMenu" id="section4">Ecole d'architecture</a>
+                  </li>
+                </ul>
+                <ul class="tab tab-block" id="aboutMenuMobile">
+                  <li class="tab-item active">
+                    <a href="#">Music</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#" class="active">Playlists</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#">Radio</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#">Connect</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column col-6 mt-4 blocksection" id="blocksection1">
+                <span class="text-large text-white">Etablissement : 
+                  <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a></span>
+                <br>
+                <span class="text-muted fontFira">2021 - 2023</span>
+                <br>
+                <span class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  A vous de m'aider à remplir cette section !
+                </span>
+              </div>
+              <div class="column col-6 mt-4 d-none blocksection" id="blocksection2">
+                <span class="text-large text-white">Etablissement : 
+                  <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a></span>
+                <br>
+                <span class="text-muted fontFira">2020 - 2021</span>
+                <br>
+                <span class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Concepteur développeur d'application web & mobile - 
+                  <a class="text-flame" href="https://www.willemsefrance.fr/">Willemse France</a>
+                </span><br>
+                <span class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Conception d'une interface de gestion des base de données de Groww
+                  <a class="text-flame" href="https://www.willemsefrance.fr/">Willemse France</a>
+                </span>
+                <ul class="tab tab-block">
+                  <li class="tab-item active">
+                    <a href="#">Music</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#" class="active">Playlists</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#">Radio</a>
+                  </li>
+                  <li class="tab-item">
+                    <a href="#">Connect</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="column col-1" id="columnRight">
         <div class="bothColumn">
