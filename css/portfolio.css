@@ -214,7 +214,14 @@ a.customIcon:hover {
   text-decoration: underline;
 }
 #aboutMenuMobile {
+  position : relative;
   display : none;
+  overflow: auto!important;
+  max-height : 20px!important;
+  height : 20px!important;
+}
+.aboutBlock {
+  display : inline-block;
 }
 @media screen and (max-width: 1200px) {
   .megaTitle {
