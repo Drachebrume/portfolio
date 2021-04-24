@@ -213,12 +213,12 @@ a.customIcon:hover {
 .underline {
   text-decoration: underline;
 }
-#aboutMenuMobile {
+.aboutMenuMobile {
   position : relative;
   display : none;
-  overflow: auto!important;
+  /* overflow: auto!important;
   max-height : 20px!important;
-  height : 20px!important;
+  height : 20px!important; */
 }
 .aboutBlock {
   display : inline-block;
@@ -233,10 +233,10 @@ a.customIcon:hover {
   #columnRight, #columnLeft {
     display : none
   }
-  #aboutMenuPc {
+  .aboutMenuPc {
     display : none;
   }
-  #aboutMenuMobile {
+  .aboutMenuMobile {
     display : initial;
   }
 }
@@ -246,7 +246,7 @@ a.customIcon:hover {
     font-size: 1.5rem;
   }
   .mainColumn {
-    margin-left : 10px;
+    
   }
 }
 /* mobile format paysage */
