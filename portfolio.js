@@ -27,6 +27,9 @@ $(window).resize(() => {
   responsive();
 })
 $(document).ready(() => {
+  AOS.init({
+    once: true
+  });
   responsive();
   activateModal('buttonMobileModal', 'mobileModal', 'closeMobileModal')
   $('.customLinkMobile').on('click', () => {

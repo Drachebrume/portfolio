@@ -213,6 +213,9 @@ a.customIcon:hover {
 .underline {
   text-decoration: underline;
 }
+#parcoursMenu {
+  box-shadow: none;
+}
 .aboutMenuMobile {
   position : relative;
   display : none;
