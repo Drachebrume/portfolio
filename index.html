@@ -28,11 +28,11 @@
       <a href="#home"><img class="ml-10 pl-5 logoHome" src="images/logo.png"></a>
     </section>
     <section class="navbar-section mr-5 pr-5">
-      <a href="#about" class="customLink mr-3"><span class="numberColor mr-2">01.</span>Infos</a>
-      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">02.</span>Parcours</a>
-      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">03.</span>Projets</a>
-      <a href="#" class="customLink mr-3"><span class="numberColor mr-2">04.</span>Contact</a>
-      <a href="#" class="btn btn-flame mx-5 px-3">Mon CV</a>
+      <a href="#about" class="customLink mr-3" data-aos="fade-down" data-aos-delay="0"><span class="numberColor mr-2">01.</span>Infos</a>
+      <a href="#parcours" class="customLink mr-3" data-aos="fade-down" data-aos-delay="100"><span class="numberColor mr-2">02.</span>Parcours</a>
+      <a href="#projects" class="customLink mr-3" data-aos="fade-down" data-aos-delay="200"><span class="numberColor mr-2">03.</span>Projets</a>
+      <a href="#contact" class="customLink mr-3" data-aos="fade-down" data-aos-delay="300"><span class="numberColor mr-2">04.</span>Contact</a>
+      <a href="#" class="btn btn-flame mx-5 px-3" data-aos="fade-down" data-aos-delay="400">Mon CV</a>
     </section>
   </header>
   <header class="navbar bg-visual pb-5 pt-5 d-none" id="navbarMobile">
@@ -40,11 +40,6 @@
       <img class="ml-10 pl-5 logoHome" src="images/logo.png">
     </section>
     <section class="navbar-section mr-5 pr-5">
-      <!-- <a href="#" class="customLink mr-10"><span class="text-flame mr-2">01.</span>A propos</a>
-      <a href="#" class="customLink mr-10"><span class="text-flame mr-2">02.</span>Parcours</a>
-      <a href="#" class="customLink mr-10"><span class="text-flame mr-2">03.</span>Projets</a>
-      <a href="#" class="customLink mr-10"><span class="text-flame mr-2">04.</span>Contact</a>
-      <a href="#" class="btn btn-flame mx-5 px-3">Mon CV</a> -->
       <button class="btn btn-flame" id="buttonMobileModal"><i class="fas fa-bars"></i></button>
       <div class="modal" id="mobileModal">
         <a href="#close" class="modal-overlay" aria-label="Close" id="test"></a>
@@ -55,10 +50,10 @@
           </div>
           <div class="modal-body">
             <div class="content p-centered text-center">
-              <a href="#about" class="customLinkMobile mr-3"><span class="numberColor mr-2">01.</span><br>Infos</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">02.</span><br>Parcours</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">03.</span><br>Projets</a><br>
-              <a href="#" class="customLinkMobile mr-3"><span class="numberColor mr-2">04.</span><br>Contact</a><br>
+              <div data-aos="fade-left" id="mobileAOS1"><a href="#about" class="customLinkMobile mr-3"><span class="numberColor mr-2">01.</span><br>Infos</a><br></div>
+              <div data-aos="fade-right" id="mobileAOS2"><a href="#parcours" class="customLinkMobile mr-3"><span class="numberColor mr-2">02.</span><br>Parcours</a><br></div>
+              <div data-aos="fade-left" id="mobileAOS3"><a href="#projects" class="customLinkMobile mr-3"><span class="numberColor mr-2">03.</span><br>Projets</a><br></div>
+              <div data-aos="fade-right" id="mobileAOS4"><a href="#" class="customLinkMobile mr-3" ><span class="numberColor mr-2">04.</span><br>Contact</a><br></div>
             </div>
           </div>
         </div>
@@ -70,10 +65,10 @@
       <div class="column col-1" id="columnLeft">
         <div class="bothColumn">
           <dl>
-            <dd><a class="customIcon" href="#"><i class="fab fa-github"></i></a></dd>
-            <dd><a class="customIcon" href="#"><i class="fab fa-gitlab"></i></a></dd>
-            <dd><a class="customIcon" href="#"><i class="fab fa-instagram"></i></a></dd>
-            <dd><a class="customIcon" href="#"><i class="fab fa-linkedin-in"></i></a></dd>
+            <dd data-aos="slide-right" data-aos-delay="0"><a class="customIcon" href="https://github.com/bpoulaindev"><i class="fab fa-github"></i></a></dd>
+            <dd data-aos="slide-right" data-aos-delay="100"><a class="customIcon" href="https://gitlab.com/bpoulain"><i class="fab fa-gitlab"></i></a></dd>
+            <dd data-aos="slide-right" data-aos-delay="200"><a class="customIcon" href="https://www.instagram.com/drachebrume/"><i class="fab fa-instagram"></i></a></dd>
+            <dd data-aos="slide-right" data-aos-delay="300"><a class="customIcon" href="https://www.linkedin.com/in/baptiste-poulain-b294231a5/"><i class="fab fa-linkedin-in"></i></a></dd>
           </dl>
           <div class="customLine mt-10"></div>
         </div>
@@ -81,21 +76,24 @@
       <div class="column col-10 col-md-12 mainColumn text-grey p-centered">
         <div class="columns">
           <div class="column col-10 col-md-11 p-centered text-left" id="home">
-            <span class="text-flame space-3">Hello, moi c'est</span><br>
-            <h1 class="text-light-grey megaTitle">Baptiste Poulain.</h1>
-            <span class="text-flame space-3">Actuellement en</span><br>
-            <h1 class="megaTitle text-gray ">Recherche d'alternance développeur fullstack.</h1>
-            <p class="bio">Etudiant en 1ère année de Master Développeur Fullstack chez MyDigitalSchool 
+            <div class="text-flame space-3" data-aos="fade-left" data-aos-delay="0">Hello, moi c'est</div>
+            <h1 class="text-light-grey megaTitle" data-aos="fade-left" data-aos-delay="100">Baptiste Poulain.</h1>
+            <div class="text-flame space-3" data-aos="fade-left" data-aos-delay="200">Actuellement en</div>
+            <h1 class="megaTitle text-gray" data-aos="fade-left" data-aos-delay="300">Recherche d'alternance développeur fullstack.</h1>
+            <p class="bio" data-aos="fade-left" data-aos-delay="400">Etudiant en 1ère année de Master Développeur Fullstack chez MyDigitalSchool 
               en alternance, je conçois des applications web et mobile. </p>
-            <a href = "mailto:baptiste.poulain59@gmail.com" class="btn btn-lg btn-flame text-flame">
+            <a href = "mailto:baptiste.poulain59@gmail.com" class="btn btn-lg btn-flame text-flame"
+            data-aos="fade-left" data-aos-delay="500">
               <span class="p-5">Contact</span>
             </a>
           </div>
         </div>
-        <div class="columns mt-40 pb-10">
+        <div class="columns mt-20 pb-10">
           <div class="column col-9 col-md-11 p-centered text-left" id="about">
-            <h3><span class="numberColor mr-2">01.</span>
-              <span class="sectionTitle ml-2">Infos</span><div class="verticalLine ml-5"></div></h3>
+            <h3 data-aos="fade-up">
+              <span class="numberColor mr-2">01.</span>
+              <span class="sectionTitle ml-2">Infos</span><div class="verticalLine ml-5"></div>
+            </h3>
             <div class="columns mt-2">
               <div class="column col-8 col-md-11 bio pr-5">
                 <p class="mt-4">Je m'appelle Baptiste et j'ai 22 ans, je suis à la recherche d'une alternance pour mon 
@@ -104,255 +102,639 @@
                 HTML5 et CSS3 puis JavaScript suivi de NodeJS.</p>
                 <span class="mt-4">J'ai récemment travaillé avec les technologies suivantes :</span>
                 <div class="columns mt-4">
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">JavaScript</span>
                   </div>
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right" data-aos-delay="300">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">Node.js</span>
                   </div>
                 </div>
                 <div class="columns">
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right" data-aos-delay="100">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">CouchDB</span>
                   </div>
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right" data-aos-delay="400">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">MongoDB</span>
                   </div>
                 </div>
                 <div class="columns">
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right" data-aos-delay="200">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">ElasticSearch</span>
                   </div>
-                  <div class="column col-6">
+                  <div class="column col-6" data-aos="fade-right" data-aos-delay="500">
                     <small><i class="fas fa-angle-right mr-2 text-flame"></i></small>
                     <span class="text-tiny">Redis</span>
                   </div>
                 </div>
               </div>
-              <div class="column col-4 col-md-8 mt-5 p-centered" data-aos="fade-left">
+              <div class="column col-4 col-md-8 mt-5 p-centered" data-aos="fade-left" data-aos-id="pictureAOS">
                 <img src="images/squareMe.jpg" class="img-responsive rounded" id="meImg">
               </div>
             </div>
           </div>
         </div>
 
-        <div class="column mt-40 pb-10">
+        <div class="column mt-20 pb-10">
           <div class="column col-11 col-md-11 p-centered text-left" id="parcours">
-            <h3><span class="numberColor mr-2">02.</span>
+            <h3 data-aos="fade-up"><span class="numberColor mr-2">02.</span>
             <span class="sectionTitle ml-2">Parcours</span><div class="verticalLine ml-5"></div></h3>
             <div class="columns mt-2">
               <div class="column col-6 col-md-12 bio">
                 <ul class="menu bg-visual aboutMenuPc" id="parcoursMenu">
-                  <li class="menu-item">
+                  <li class="menu-item" data-aos="fade-right" data-aos-delay="100">
                     <a class="subMenu triggered" id="section1">
                       Master Dev Fullstack - 
                       <span class="underline">Alternance</span>
                     </a>
                   </li><br>
-                  <li class="menu-item">
+                  <li class="menu-item" data-aos="fade-right" data-aos-delay="200">
                     <a class="subMenu" id="section2">
                       Bachelor 3 Dev Web -
                       <span class="underline">Alternance</span>
                     </a>
                   </li><br>
-                  <li class="menu-item">
+                  <li class="menu-item" data-aos="fade-right" data-aos-delay="300">
                     <a class="subMenu" id="section3">Licence Informatique</a>
                   </li><br>
-                  <li class="menu-item">
+                  <li class="menu-item" data-aos="fade-right" data-aos-delay="400">
                     <a class="subMenu" id="section4">Ecole d'architecture</a>
                   </li>
                 </ul>
                 <div class="columns aboutMenuMobile">
                   <div class="accordion">
                     <input type="radio" id="accordion-1" name="accordion-radio" hidden>
-                    <label class="accordion-header" for="accordion-1">
+                    <label class="accordion-header" for="accordion-1" data-aos="fade-right" data-aos-delay="100">
                       <i class="icon icon-arrow-right mr-1"></i>
                       Master en
                       <span class="underline">Alternance</span>
                     </label>
                     <div class="accordion-body mt-4">
-                      <span>Etablissement : 
-                        <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a></span>
-                      <br>
-                      <span class="text-muted text-small fontFira">2021 - 2023</span>
-                      <p class="text-small mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      <div class="accordionAOS" data-aos="fade-left" data-aos-delay="100">Etablissement : 
+                        <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a>
+                      </div>
+                      <div class="text-muted text-small fontFira accordionAOS" data-aos="fade-left" data-aos-delay="200">2021 - 2023</div>
+                      <p class="text-small mt-4 accordionAOS" data-aos="fade-left" data-aos-delay="300">
+                        <i class="fas fa-angle-right mr-2 text-flame"></i> 
                         A vous de m'aider à remplir cette section !
                       </p>
-                      <hr>
+                      <hr class="accordionAOS" data-aos="fade-up" data-aos-delay="400">
                     </div>
                   </div>
                   <div class="accordion">
                     <input type="radio" id="accordion-2" name="accordion-radio" hidden>
-                    <label class="accordion-header" for="accordion-2">
+                    <label class="accordion-header" for="accordion-2" data-aos="fade-right" data-aos-delay="200">
                       <i class="icon icon-arrow-right mr-1"></i>
                       Bachelor en
                       <span class="underline">Alternance</span>
                     </label>
                     <div class="accordion-body mt-4">
-                      <span>Etablissement : 
+                      <div class="accordionAOS" data-aos="fade-left" data-aos-delay="100">Etablissement : 
                         <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a>
-                      </span>
-                      <br>
-                      <span>Entreprise : 
+                      </div>
+                      <div class="accordionAOS" data-aos="fade-left" data-aos-delay="200">Entreprise : 
                         <a href="https://www.willemsefrance.fr/" class="text-flame ml-4">Willemse</a>
-                      </span>
-                      <br>
-                      <span class="text-muted text-small fontFira">2020 - 2021</span>
-                      <p class="text-small mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      </div>
+                      <div class="text-muted text-small fontFira accordionAOS" data-aos="fade-left" data-aos-delay="300">2020 - 2021</div>
+                      <p class="text-small mt-4 accordionAOS" data-aos="fade-left" data-aos-delay="400">
+                        <i class="fas fa-angle-right mr-2 text-flame"></i> 
                         Concepteur développeur d'application web & mobile
                       </p>
-                      <p class="text-small"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      <p class="text-small accordionAOS" data-aos="fade-left" data-aos-delay="500"><i class="fas fa-angle-right mr-2 text-flame"></i> 
                         Conception d'une application web de gestion des bases de données pour
                         l'application mobile Groww avec NodeJS, ExpressJS, CouchDB, Redis et MariaDB.
                       </p>
-                      <p class="text-small"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      <p class="text-small accordionAOS" data-aos="fade-left" data-aos-delay="600"><i class="fas fa-angle-right mr-2 text-flame"></i> 
                         Conception d'une application web générant des images mappées avec des icones
                         responsive liées à un CDN et utilisant Puppeteer pour les captures d'écran automatiques.
                       </p>
-                      <hr>
+                      <hr class="accordionAOS" data-aos="fade-up" data-aos-delay="700">
                     </div>
                   </div>
                   <div class="accordion">
                     <input type="radio" id="accordion-3" name="accordion-radio" hidden>
-                    <label class="accordion-header" for="accordion-3">
+                    <label class="accordion-header" for="accordion-3" data-aos="fade-right" data-aos-delay="300">
                       <i class="icon icon-arrow-right mr-1"></i>
                       Licence informatique
                     </label>
                     <div class="accordion-body mt-4">
-                      <span>Etablissement : 
+                      <div class="accordionAOS" data-aos="fade-left" data-aos-delay="100">Etablissement : 
                         <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">ULCO</a>
-                      </span>
-                      <br>
-                      <span class="text-muted text-small fontFira">2018 - 2020</span>
-                      <p class="text-small mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      </div>
+                      <div class="text-muted text-small fontFira accordionAOS" data-aos="fade-left" data-aos-delay="200">2018 - 2020</div>
+                      <p class="text-small mt-4 accordionAOS" data-aos="fade-left" data-aos-delay="300"><i class="fas fa-angle-right mr-2 text-flame"></i> 
                         Réalisation d'une appli web type webstore sous NodeJS, Express et Bootstrap 4 avec base de données MySQL
                         <i class="fas fa-angle-double-right"></i>
                         <a href="https://baptiste-poulain-lego-webstore.herokuapp.com/produits" class="text-flame">Lego Webstore</a>
                       </p>
-                      <p class="text-small"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                      <p class="text-small accordionAOS" data-aos="fade-left" data-aos-delay="400"><i class="fas fa-angle-right mr-2 text-flame"></i> 
                         Enseignement général : C++ (théorie des graphes, pointeurs, thread, mutex), SQL, Assembleur, HTML, CSS.
                       </p>
-                      <hr>
+                      <hr class="accordionAOS" data-aos="fade-up" data-aos-delay="500">
                     </div>
                   </div>
                   <div class="accordion">
                     <input type="radio" id="accordion-4" name="accordion-radio" hidden>
-                    <label class="accordion-header" for="accordion-4">
+                    <label class="accordion-header" for="accordion-4" data-aos="fade-right" data-aos-delay="400">
                       <i class="icon icon-arrow-right mr-1"></i>
                       Ecole d'architecture
                     </label>
                     <div class="accordion-body mt-4">
-                      <span class="text-white">Etablissement : 
-                        <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a>
-                      </span>
-                      <br>
-                      <span class="text-white">Entreprise : 
-                        <a href="https://www.willemsefrance.fr/" class="text-flame ml-4">Willemse</a>
-                      </span>
-                      <br>
-                      <span class="text-muted text-small fontFira">2020 - 2021</span>
-                      <p class="text-small mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
-                        Concepteur développeur d'application web & mobile
+                      <div class="accordionAOS" data-aos="fade-left" data-aos-delay="100">Etablissement : 
+                        <a href="https://uclouvain.be/fr/facultes/loci" class="text-flame ml-4">Saint-Luc Tournai</a>
+                      </div>
+                      <div class="text-muted text-small fontFira accordionAOS" data-aos="fade-left" data-aos-delay="200">2016 - 2018</div>
+                      <p class="text-small mt-4 accordionAOS" data-aos="fade-left" data-aos-delay="300"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                        Enseignement général : Mathématiques, Anglais, Arts & Moyens d'expression, géométrie descriptive, théorie, 
+                        & projet d'architecture.
                       </p>
-                      <p class="text-small"><i class="fas fa-angle-right mr-2 text-flame"></i> 
-                        Conception d'une application web de gestion des bases de données pour
-                        l'application mobile Groww avec NodeJS, ExpressJS, CouchDB, Redis et MariaDB.
-                      </p>
-                      <p class="text-small"><i class="fas fa-angle-right mr-2 text-flame"></i> 
-                        Conception d'une application web générant des images mappées avec des icones
-                        responsive liées à un CDN et utilisant Puppeteer pour les captures d'écran automatiques.
-                      </p>
+                      <hr class="accordionAOS" data-aos="fade-up" data-aos-delay="400">
                     </div>
                   </div>
                 </div>
               </div>
 
-                <div class="column col-6 mt-4 blocksection aboutMenuPc" id="blocksection1">
-                  <span class="text-large">Etablissement : 
-                    <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a></span>
-                  <br>
-                  <span class="text-muted fontFira">2021 - 2023</span>
-                  <br>
-                  <span class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                <div class="column col-6 mt-4 blocksection aboutMenuPc" id="blocksection1" data-aos="fade-up">
+                  <div class="text-large blocksection1AOS" data-aos="fade-left" data-aos-delay="0">Etablissement : 
+                    <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a>
+                  </div>
+                  <div class="text-muted fontFira blocksection1AOS" data-aos="fade-left" data-aos-delay="100">2021 - 2023</div>
+                  <div class="text-large blocksection1AOS" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     A vous de m'aider à remplir cette section !
-                  </span>
+                  </div>
                 </div>
-                <div class="column col-6 mt-4 d-none blocksection" id="blocksection2">
-                  <span class="text-large">
+                <div class="column col-6 mt-4 d-none blocksection" id="blocksection2" data-aos="fade-up">
+                  <div class="text-large blocksection2AOS" data-aos="fade-left" data-aos-delay="0">
                     Etablissement : 
                     <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">MyDigitalSchool</a>
-                  </span>
-                  <br>
-                  <span class="text-large">Entreprise : 
+                  </div>
+                  <div class="text-large blocksection2AOS" data-aos="fade-left" data-aos-delay="100">Entreprise : 
                     <a href="https://www.willemsefrance.fr/" class="text-flame ml-4">Willemse</a>
-                  </span>
-                  <br>
-                  <span class="text-muted text-small fontFira">2020 - 2021</span>
-                  <p class="text-large mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  </div>
+                  <div class="text-muted text-small fontFira blocksection2AOS" data-aos="fade-left" data-aos-delay="200">2020 - 2021</div>
+                  <p class="text-large mt-4 blocksection2AOS" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     Concepteur développeur d'application web & mobile
                   </p>
-                  <p class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  <p class="text-large blocksection2AOS" data-aos="fade-left" data-aos-delay="400">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     Conception d'une application web de gestion des bases de données pour
                     l'application mobile Groww avec NodeJS, ExpressJS, CouchDB, Redis et MariaDB.
                   </p>
-                  <p class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  <p class="text-large blocksection2AOS" data-aos="fade-left" data-aos-delay="500">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     Conception d'une application web générant des images mappées avec des icones
                     responsive liées à un CDN et utilisant Puppeteer pour les captures d'écran automatiques.
                   </p>
-                  <hr>
+                  <hr class="blocksection2AOS" data-aos="fade-up" data-aos-delay="600">
                 </div>
-                <div class="column col-6 mt-4 d-none blocksection" id="blocksection3">
-                  <span class="text-large">Etablissement : 
+                <div class="column col-6 mt-4 d-none blocksection" id="blocksection3" data-aos="fade-up">
+                  <div class="text-large blocksection3AOS" data-aos="fade-left" data-aos-delay="0">Etablissement : 
                     <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">ULCO</a>
-                  </span>
-                  <br>
-                  <span class="text-muted text-small fontFira">2018 - 2020</span>
-                  <p class="text-large mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  </div>
+                  <div class="text-muted text-small fontFira blocksection3AOS" data-aos="fade-left" data-aos-delay="100">2018 - 2020</div>
+                  <p class="text-large mt-4 blocksection3AOS" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     Réalisation d'une appli web type webstore sous NodeJS, Express et Bootstrap 4 avec base de données MySQL
                     <i class="fas fa-angle-double-right"></i>
                     <a href="https://baptiste-poulain-lego-webstore.herokuapp.com/produits" class="text-flame">Lego Webstore</a>
                   </p>
-                  <p class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  <p class="text-large blocksection3AOS" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
                     Enseignement général : C++ (théorie des graphes, pointeurs, thread, mutex), SQL, Assembleur, HTML, CSS.
                   </p>
-                  <hr>
+                  <hr class="blocksection3AOS" data-aos="fade-up" data-aos-delay="400">
                 </div>
                 <div class="column col-6 mt-4 d-none blocksection" id="blocksection4">
-                  <span class="text-large">Etablissement : 
-                    <a href="https://www.mydigitalschool.com/" class="text-flame ml-4">Saint-Luc Tournai</a>
-                  </span>
+                  <div class="text-large blocksection4AOS" data-aos="fade-left" data-aos-delay="0">Etablissement : 
+                    <a href="https://uclouvain.be/fr/facultes/loci" class="text-flame ml-4">Saint-Luc Tournai</a>
+                  </div>
                   <br>
-                  <span class="text-muted text-small fontFira">2018 - 2020</span>
-                  <p class="text-large mt-4"><i class="fas fa-angle-right mr-2 text-flame"></i> 
-                    Réalisation d'une appli web type webstore sous NodeJS, Express et Bootstrap 4 avec base de données MySQL
-                    <i class="fas fa-angle-double-right"></i>
-                    <a href="https://baptiste-poulain-lego-webstore.herokuapp.com/produits" class="text-flame">Lego Webstore</a>
+                  <div class="text-muted text-small fontFira blocksection4AOS" data-aos="fade-left" data-aos-delay="100">2016 - 2018</div>
+                  <p class="text-large mt-4 blocksection4AOS" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                    Enseignement général : Mathématiques, Anglais, Arts & Moyens d'expression, géométrie descriptive, théorie, 
+                    & projet d'architecture.
                   </p>
-                  <p class="text-large"><i class="fas fa-angle-right mr-2 text-flame"></i> 
-                    Enseignement général : C++ (théorie des graphes, pointeurs, thread, mutex), SQL, Assembleur, HTML, CSS.
-                  </p>
-                  <hr>
+                  <hr class="blocksection4AOS" data-aos="fade-up" data-aos-delay="300">
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column mt-20 pb-10">
+          <div class="column col-11 col-md-11 p-centered text-left" id="projects">
+            <h3 data-aos="fade-up">
+              <span class="numberColor mr-2">03.</span>
+              <span class="sectionTitle ml-2">Projets</span>
+              <div class="verticalLine ml-5"></div>
+            </h3>
+            <!-- BACKOFFICE -->
+            <div class="columns mt-20">
+              <div class="column col-5 col-lg-12">
+                <h6 class="numberColor" data-aos="fade-right" data-aos-delay="0">Projet d'entreprise</h6>
+                <h1 class="sectionTitle" data-aos="fade-right" data-aos-delay="100">Back Office</h1>
+                Application web de monitoring de l'application Groww.
+                <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="200">
+                  <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Recherche, modification et suppression des utilisateurs de Groww.
+                </p>
+                <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="300">
+                  <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Recherche et édition des 1715 fiches de plantes de la base de données.
+                </p>
+              </div>
+              <div class="column col-1 col-sm-2 col-lg-1">
+                <button class="btn btn-lg btn-flame" id="buttonBackofficeModal" data-aos="zoom-in" data-aos-delay="100">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+              </div>
+              <div class="column col-6 col-sm-10 col-lg-11">
+                <img class="img-responsive d-none" src="images/backoffice/screen1.png" id="coverBackoffice" data-aos="fade-up" data-aos-delay="0">
+                <div class="carousel" id="backofficeCarousel" data-aos="fade-up" data-aos-delay="100">
+                  <input class="carousel-locator" id="startBslide-1" type="radio" name="carousel-radio" hidden="" checked="">
+                  <input class="carousel-locator" id="startBslide-2" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startBslide-3" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startBslide-4" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startBslide-5" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startBslide-6" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startBslide-7" type="radio" name="carousel-radio" hidden="">
+                  <div class="carousel-container">
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-primary btn-lg carouselCursor" for="startBslide-7"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-primary btn-lg carouselCursor" for="startBslide-2"><i class="icon icon-arrow-right">saluuut</i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen1.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-1"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-3"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen2.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-2"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-4"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen3.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-3"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-5"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen4.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-4"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-6"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen5.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-5"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-7"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen6.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startBslide-6"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startBslide-1"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/backoffice/screen7.png" alt="">
+                    </figure>
+                  </div>
+                  <div class="carousel-nav">
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-1">1</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-2">2</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-3">3</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-4">4</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-5">5</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-6">6</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startBslide-7">7</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal bg-visual" id="backofficeModal">
+                <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container bg-visual">
+                  <div class="modal-header">
+                  </div>
+                  <div class="modal-body">
+                    <div class="columns">
+                      <div class="column col-sm-10 col-11">
+                        <div class="carousel">
+                          <input class="carousel-locator" id="Bslide-1" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-2" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-3" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-4" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-5" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-6" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Bslide-7" type="radio" name="carousel-radio" hidden="">
+                          <div class="carousel-container">
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-primary btn-lg carouselCursor" for="Bslide-7"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-primary btn-lg carouselCursor" for="Bslide-2"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen1.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-1"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-3"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen2.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-2"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-4"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen3.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-3"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-5"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen4.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-4"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-6"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen5.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-5"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-7"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen6.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Bslide-6"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Bslide-1"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/backoffice/screen7.png" alt="">
+                            </figure>
+                          </div>
+                          <div class="carousel-nav">
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-1">1</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-2">2</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-3">3</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-4">4</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-5">5</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-6">6</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Bslide-7">7</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column col-1 col-sm-2">
+                        <button class="btn btn-flame float-right text-flame" id="closeBackofficeModal">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
                 </div>
               </div>
             </div>
-        </div>
-
-        <div class="column mt-40 pb-10">
-          <div class="column col-11 col-md-11 p-centered text-left" id="parcours">
-            <h3><span class="numberColor mr-2">02.</span>
-            <span class="sectionTitle ml-2">Parcours</span><div class="verticalLine ml-5"></div></h3>
+            <hr class="mt-10" data-aos="fade-up">
+            <!-- LOCCKER -->
+            <div class="columns mt-20">
+                <div class="column col-6 col-sm-10 col-lg-11 mb-4">
+                  <img class="img-responsive" src="images/loccker/screen1.png" id="coverLoccker" data-aos="fade-up" data-aos-delay="100">
+                  <div class="carousel d-none" id="locckerCarousel">
+                    <input class="carousel-locator" id="startLslide-1" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="startLslide-2" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="startLslide-3" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="startLslide-4" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="startLslide-5" type="radio" name="carousel-radio" hidden="">
+                    <div class="carousel-container">
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-primary btn-lg carouselCursor" for="startLslide-5"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-primary btn-lg carouselCursor" for="startLslide-2"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="images/loccker/screen1.png" alt="">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg carouselCursor" for="startLslide-1"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg carouselCursor" for="startLslide-3"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="images/loccker/screen2.png" alt="">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg carouselCursor" for="startLslide-2"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg carouselCursor" for="startLslide-4"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="images/loccker/screen3.png" alt="">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg carouselCursor" for="startLslide-3"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg carouselCursor" for="startLslide-5"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="images/loccker/screen4.png" alt="">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg carouselCursor" for="startLslide-4"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg carouselCursor" for="startLslide-1"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="images/loccker/screen5.png" alt="">
+                      </figure>
+                    </div>
+                    <div class="carousel-nav">
+                      <label class="nav-item text-hide c-hand carouselNav" for="startLslide-1">1</label>
+                      <label class="nav-item text-hide c-hand carouselNav" for="startLslide-2">2</label>
+                      <label class="nav-item text-hide c-hand carouselNav" for="startLslide-3">3</label>
+                      <label class="nav-item text-hide c-hand carouselNav" for="startLslide-4">4</label>
+                      <label class="nav-item text-hide c-hand carouselNav" for="startLslide-5">5</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="column col-1 col-sm-2 col-lg-1">
+                  <button class="btn btn-lg btn-flame" id="buttonLocckerModal" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                  </button>
+                </div>
+                <div class="column col-5 col-lg-12">
+                  <h6 class="numberColor" data-aos="fade-right" data-aos-delay="0">Projet d'école</h6>
+                  <h1 class="sectionTitle" data-aos="fade-right" data-aos-delay="100">Loccker</h1>
+                  Application web - coffre fort virtuel.
+                  <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="200">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                    Création de compte, espace connexion, envoi, gestion et téléchargement de fichiers personnels.
+                  </p>
+                  <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="300">
+                    <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                    Sécurité du projet assurée par Helmet, cryptage de mots de passe, filtrage des requêtes vers la base
+                    MongoDB.
+                  </p>
+                </div>
+                <div class="modal bg-visual" id="locckerModal">
+                  <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                  <div class="modal-container bg-visual">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                      <div class="columns">
+                        <div class="column col-sm-10 col-11">
+                          <div class="carousel">
+                            <input class="carousel-locator" id="Lslide-1" type="radio" name="carousel-radio" hidden="">
+                            <input class="carousel-locator" id="Lslide-2" type="radio" name="carousel-radio" hidden="">
+                            <input class="carousel-locator" id="Lslide-3" type="radio" name="carousel-radio" hidden="">
+                            <input class="carousel-locator" id="Lslide-4" type="radio" name="carousel-radio" hidden="">
+                            <input class="carousel-locator" id="Lslide-5" type="radio" name="carousel-radio" hidden="">
+                            <div class="carousel-container">
+                              <figure class="carousel-item">
+                                <label class="item-prev btn btn-primary btn-lg carouselCursor" for="Lslide-5"><i class="icon icon-arrow-left"></i></label>
+                                <label class="item-next btn btn-primary btn-lg carouselCursor" for="Lslide-2"><i class="icon icon-arrow-right"></i></label>
+                                <img class="img-responsive rounded" src="images/loccker/screen1.png" alt="">
+                              </figure>
+                              <figure class="carousel-item">
+                                <label class="item-prev btn btn-action btn-lg carouselCursor" for="Lslide-1"><i class="icon icon-arrow-left"></i></label>
+                                <label class="item-next btn btn-action btn-lg carouselCursor" for="Lslide-3"><i class="icon icon-arrow-right"></i></label>
+                                <img class="img-responsive rounded" src="images/loccker/screen2.png" alt="">
+                              </figure>
+                              <figure class="carousel-item">
+                                <label class="item-prev btn btn-action btn-lg carouselCursor" for="Lslide-2"><i class="icon icon-arrow-left"></i></label>
+                                <label class="item-next btn btn-action btn-lg carouselCursor" for="Lslide-4"><i class="icon icon-arrow-right"></i></label>
+                                <img class="img-responsive rounded" src="images/loccker/screen3.png" alt="">
+                              </figure>
+                              <figure class="carousel-item">
+                                <label class="item-prev btn btn-action btn-lg carouselCursor" for="Lslide-3"><i class="icon icon-arrow-left"></i></label>
+                                <label class="item-next btn btn-action btn-lg carouselCursor" for="Lslide-5"><i class="icon icon-arrow-right"></i></label>
+                                <img class="img-responsive rounded" src="images/loccker/screen4.png" alt="">
+                              </figure>
+                              <figure class="carousel-item">
+                                <label class="item-prev btn btn-action btn-lg carouselCursor" for="Lslide-4"><i class="icon icon-arrow-left"></i></label>
+                                <label class="item-next btn btn-action btn-lg carouselCursor" for="Lslide-1"><i class="icon icon-arrow-right"></i></label>
+                                <img class="img-responsive rounded" src="images/loccker/screen5.png" alt="">
+                              </figure>
+                            </div>
+                            <div class="carousel-nav">
+                              <label class="nav-item text-hide c-hand carouselNav" for="Lslide-1">1</label>
+                              <label class="nav-item text-hide c-hand carouselNav" for="Lslide-2">2</label>
+                              <label class="nav-item text-hide c-hand carouselNav" for="Lslide-3">3</label>
+                              <label class="nav-item text-hide c-hand carouselNav" for="Lslide-4">4</label>
+                              <label class="nav-item text-hide c-hand carouselNav" for="Lslide-5">5</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column col-sm-2 col-1">
+                          <button class="btn btn-flame float-right text-flame" id="closeLocckerModal">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <hr class="mt-10" data-aos="fade-up">
+            <!-- GARDEN-MAP -->
+            <div class="columns mt-20">
+              <div class="column col-5 col-lg-12">
+                <h6 class="numberColor" data-aos="fade-right" data-aos-delay="0">Projet d'entreprise</h6>
+                <h1 class="sectionTitle" data-aos="fade-right" data-aos-delay="100">Garden-Map</h1>
+                Application web de monitoring de l'application Groww.
+                <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="200">
+                  <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Recherche, modification et suppression des utilisateurs de Groww.
+                </p>
+                <p class="text-large mt-4" data-aos="fade-right" data-aos-delay="300">
+                  <i class="fas fa-angle-right mr-2 text-flame"></i> 
+                  Recherche et édition des 1715 fiches de plantes de la base de données.
+                </p>
+              </div>
+              <div class="column col-1 col-sm-2 col-lg-1">
+                <button class="btn btn-lg btn-flame" id="buttonGardenmapModal" data-aos="zoom-in" data-aos-delay="100">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+              </div>
+              <div class="column col-6 col-sm-10 col-lg-11">
+                <img class="img-responsive" src="images/gardenmap/screen1.png" id="coverGardenmap" data-aos="fade-up" data-aos-delay="0">
+                <div class="carousel d-none" id="gardenmapCarousel">
+                  <input class="carousel-locator" id="startGslide-1" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startGslide-2" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startGslide-3" type="radio" name="carousel-radio" hidden="">
+                  <input class="carousel-locator" id="startGslide-4" type="radio" name="carousel-radio" hidden="">
+                  <div class="carousel-container">
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-primary btn-lg carouselCursor" for="startGslide-4"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-primary btn-lg carouselCursor" for="startGslide-2"><i class="icon icon-arrow-right">saluuut</i></label>
+                      <img class="img-responsive rounded" src="images/gardenmap/screen1.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startGslide-1"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startGslide-3"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/gardenmap/screen2.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startGslide-2"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startGslide-4"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/gardenmap/screen3.png" alt="">
+                    </figure>
+                    <figure class="carousel-item">
+                      <label class="item-prev btn btn-action btn-lg carouselCursor" for="startGslide-3"><i class="icon icon-arrow-left"></i></label>
+                      <label class="item-next btn btn-action btn-lg carouselCursor" for="startGslide-1"><i class="icon icon-arrow-right"></i></label>
+                      <img class="img-responsive rounded" src="images/gardenmap/screen4.png" alt="">
+                    </figure>
+                  </div>
+                  <div class="carousel-nav">
+                    <label class="nav-item text-hide c-hand carouselNav" for="startGslide-1">1</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startGslide-2">2</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startGslide-3">3</label>
+                    <label class="nav-item text-hide c-hand carouselNav" for="startGslide-4">4</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal bg-visual" id="gardenmapModal">
+                <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container bg-visual">
+                  <div class="modal-header">
+                  </div>
+                  <div class="modal-body">
+                    <div class="columns">
+                      <div class="column col-sm-10 col-11">
+                        <div class="carousel">
+                          <input class="carousel-locator" id="Gslide-1" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Gslide-2" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Gslide-3" type="radio" name="carousel-radio" hidden="">
+                          <input class="carousel-locator" id="Gslide-4" type="radio" name="carousel-radio" hidden="">
+                          <div class="carousel-container">
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-primary btn-lg carouselCursor" for="Gslide-4"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-primary btn-lg carouselCursor" for="Gslide-2"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/gardenmap/screen1.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Gslide-1"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Gslide-3"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/gardenmap/screen2.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Gslide-2"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Gslide-4"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/gardenmap/screen3.png" alt="">
+                            </figure>
+                            <figure class="carousel-item">
+                              <label class="item-prev btn btn-action btn-lg carouselCursor" for="Gslide-3"><i class="icon icon-arrow-left"></i></label>
+                              <label class="item-next btn btn-action btn-lg carouselCursor" for="Gslide-1"><i class="icon icon-arrow-right"></i></label>
+                              <img class="img-responsive rounded" src="images/gardenmap/screen4.png" alt="">
+                            </figure>
+                          </div>
+                          <div class="carousel-nav">
+                            <label class="nav-item text-hide c-hand carouselNav" for="Gslide-1">1</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Gslide-2">2</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Gslide-3">3</label>
+                            <label class="nav-item text-hide c-hand carouselNav" for="Gslide-4">4</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column col-sm-2 col-1">
+                        <button class="btn btn-flame float-right text-flame" id="closeGardenmapModal">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-10" data-aos="fade-up">
           </div>
         </div>
 
       </div>
       <div class="column col-1" id="columnRight">
         <div class="bothColumn">
-          <a class="pb-10" href="" id="reverseMail">baptiste.poulain59@gmail.com</a>
+          <a class="pb-10" href="" id="reverseMail" data-aos="fade-down">baptiste.poulain59@gmail.com</a>
           <div class="customLine"></div>
         </div>
       </div>
